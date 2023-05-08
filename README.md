@@ -10,7 +10,7 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
-### 💻 This challenge was made with only with HTML and CSS code. 🤓
+### 💻 This challenge was made with only HTML and CSS code. 🤓
 
 ### 💻 Challenge creado con puro HTML & CSS. 🤓
 
