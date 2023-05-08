@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  /* ### Neutral */
+
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-Light-gray: hsl(0, 0%, 98%);
+
+  /* ## Typography */
+
+  --size: 15px;
+
+  /* ### Fonts */
+
+  /* - Weights: 200, 400, 600 */
+  --font-poppins: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h3, p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: var(--very-Light-gray);
+  font-family: var(--font-poppins);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 2.4rem;
+  font-weight: 200;
+  color: var(--very-dark-blue);
+}
+
+.header-content span {
+  font-weight: 600;
+}
+
+.header-content p {
+  font-size: var(--size);
+  color: var(--grayish-blue);
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.middle-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  max-width: 22rem;
+  height: auto;
+  border-radius: 0.3rem;
+  padding: 2rem;
+  padding-top: 1.750rem;
+  box-shadow: 17px 27px 81px -30px rgba(86,105,138,0.6);
+  background: var(--very-Light-gray);
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.750rem;
+  font-weight: 600;
+  color: var(--very-dark-blue);
+}
+
+.card p {
+  font-size: 13px;
+  color: var(--grayish-blue);
+  margin-bottom: 2.5rem;
+}
+
+.card img {
+  width: 4rem;
+  height: auto;
+  align-self: flex-end;
+}
+
+.card._1 {
+  border-top: 4px solid var(--cyan);
+}
+.card._2 {
+  border-top: 4px solid var(--red);
+}
+.card._3 {
+  border-top: 4px solid var(--orange);
+
+}
+.card._4 {
+  border-top: 4px solid var(--blue);
+
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1200px) {
+  .cards-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 625px) {
+  .header-content h1 {
+    font-size: 1.5rem;
+  }
+  .header-content p br {
+    display: none;
+  }
+
+  .card {
+    padding: 1.7rem;
+    padding-top: 1.25rem;
+  }
+
+  .card p {
+    margin-bottom: 1.750rem;
+  }
+}
